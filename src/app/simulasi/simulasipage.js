@@ -9,7 +9,7 @@ import optimalAlgorithm from "../../components/algorithms/opt";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-export default function SimulasiPage() {
+export function SimulasiPage() {
   const [pages, setPages] = useState("");
   const [frameCount, setFrameCount] = useState("");
   const [algorithms, setAlgorithms] = useState([]);

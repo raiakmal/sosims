@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-      {/* Navbar */}
-      <Navbar />
 
       {/* Header */}
       <header className="bg-white shadow-md p-6">
@@ -77,7 +74,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-16 p-6 bg-gray-100 text-center text-sm text-gray-500">
-        © 2025 Simulasi Page Replacement – Dhiya Ulhaq Prima Yuga
+        © 2025 Simulasi Page Replacement – Sosims
       </footer>
     </main>
   );

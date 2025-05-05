@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-md p-6">
         <h1 className="text-3xl font-bold text-center text-blue-600">
-          Simulasi Algoritma Page Replacement
+          Materi & Simulasi Algoritma Page Replacement
         </h1>
         <p className="text-center mt-2 text-gray-600 max-w-2xl mx-auto">
           Aplikasi ini membantu Anda memahami dan membandingkan efisiensi algoritma page replacement FIFO, LRU, dan Optimal dalam manajemen memori virtual.

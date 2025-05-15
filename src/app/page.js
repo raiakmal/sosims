@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowLeftRight, Clock3, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
@@ -32,23 +33,23 @@ export default function Home() {
             {
               title: 'FIFO',
               desc: 'Algoritma mengganti halaman yang paling awal dimasukkan ke memori.',
-              icon: '📦',
+              icon: <ArrowLeftRight size={40} className="text-blue-600 mx-auto" />,
             },
             {
               title: 'LRU',
               desc: 'Mengganti halaman yang paling lama tidak digunakan.',
-              icon: '⏳',
+              icon: <Clock3 size={40} className="text-green-600 mx-auto" />,
             },
             {
               title: 'Optimal',
               desc: 'Mengganti halaman yang tidak akan digunakan dalam waktu terlama ke depan.',
-              icon: '🎯',
+              icon: <Sparkles size={40} className="text-purple-600 mx-auto" />,
             },
           ].map((algo) => (
-            <div key={algo.title} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-              <div className="text-4xl mb-4">{algo.icon}</div>
+            <div key={algo.title} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
+              <div className="mb-4">{algo.icon}</div>
               <h3 className="text-xl font-bold mb-2">{algo.title}</h3>
-              <p className="text-gray-600">{algo.desc}</p>
+              <p className="text-gray-600 text-center">{algo.desc}</p>
             </div>
           ))}
         </div>

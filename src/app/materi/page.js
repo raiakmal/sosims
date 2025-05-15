@@ -205,7 +205,7 @@ function Quiz({ type }) {
       ))}
       <button
         onClick={handleCheck}
-        className={`mt-4 px-5 py-2 bg-${type === "fifo" ? "blue" : type === "lru" ? "green" : "purple"}-600 hover:bg-${type === "fifo" ? "blue" : type === "lru" ? "green" : "purple"}-700 text-white font-semibold rounded`}
+        className="mt-4 px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded"
       >
         Periksa Jawaban
       </button>
@@ -372,7 +372,7 @@ export default function MateriPage() {
                 <h4 className="font-semibold mb-2">📘 Fakta Tambahan</h4>
                 <ul className="list-disc pl-5">
                   <li>FIFO tidak mempertimbangkan kapan halaman terakhir digunakan.</li>
-                  <li>Masalah besar dari FIFO adalah "Belady's Anomaly", yaitu jumlah page fault bisa naik saat jumlah frame ditambah. Ini kontra-intuitif dan menunjukkan kelemahan FIFO.</li>
+                  <li>Masalah besar dari FIFO adalah &quot;Belady&#39;s Anomaly&quot;, yaitu jumlah page fault bisa naik saat jumlah frame ditambah. Ini kontra-intuitif dan menunjukkan kelemahan FIFO.</li>
                   <li>Contoh kasus nyata: digunakan di sistem lama atau OS dengan arsitektur sederhana.</li>
                 </ul>
               </div>
@@ -488,7 +488,7 @@ export default function MateriPage() {
               </div>
               <div className="bg-green-50 rounded p-4 border-l-4 border-green-500 mb-6">
                 <h4 className="font-semibold mb-2">🔍 Analogi Sehari-Hari</h4>
-                <p>LRU itu kayak aplikasi yang auto logout akun kamu kalau udah lama gak dipakai. Jadi yang paling jarang kamu sentuh, bakal 'dibuang' duluan.</p>
+                <p>LRU itu kayak aplikasi yang auto logout akun kamu kalau udah lama gak dipakai. Jadi yang paling jarang kamu sentuh, bakal &#39;dibuang&#39; duluan.</p>
               </div>
               <div className="bg-yellow-50 rounded p-4 border-l-4 border-yellow-400">
                 <h4 className="font-semibold mb-2">🧪 Studi Kasus Tambahan</h4>
@@ -641,7 +641,7 @@ export default function MateriPage() {
               </div>
               <div className="bg-yellow-50 rounded p-4 border-l-4 border-yellow-400 mt-6">
                 <h4 className="font-semibold mb-2">🧠 Analogi Sehari-Hari</h4>
-                <p>Bayangin kamu mau buang isi kulkas tapi cuma boleh buang satu makanan. Kamu cek label expired semua makanan dan buang yang masa berlakunya paling lama — karena dia akan 'digunakan' paling lambat. Itulah algoritma optimal 💡</p>
+                <p>Bayangin kamu mau buang isi kulkas tapi cuma boleh buang satu makanan. Kamu cek label expired semua makanan dan buang yang masa berlakunya paling lama — karena dia akan &#39;digunakan&#39; paling lambat. Itulah algoritma optimal 💡</p>
               </div>
               <Quiz type="optimal" />
             </section>

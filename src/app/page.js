@@ -47,7 +47,7 @@ export default function Home() {
             },
           ].map((algo) => (
             <div key={algo.title} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col items-center">
-              <div className="mb-4">{algo.icon}</div>
+              <div className="mb-4 bg-green-100 p-4 rounded-full">{algo.icon}</div>
               <h3 className="text-xl font-bold mb-2">{algo.title}</h3>
               <p className="text-gray-600 text-center">{algo.desc}</p>
             </div>
